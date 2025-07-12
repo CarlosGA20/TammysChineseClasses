@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://carlosga20.github.io/TammysChineseClasses/sitemap.xml

@@ -1,0 +1,423 @@
+/* Global styles for Tammy's Chinese Classes website */
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+.hero-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    background: linear-gradient(120deg, #fbeee6 0%, #f7cac9 100%);
+    text-align: center;
+    padding: 3rem 1rem 2rem 1rem;
+}
+
+.hero-block h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #b85c38;
+    margin: 0;
+}
+
+.hero-block h1 span {
+    display: block;
+    font-size: 1.5rem;
+    color: #6a4e42;
+    margin-top: 1rem;
+}
+
+/* --- Welcome Block Card Layout --- */
+.welcome-block {
+    background: #fff6e9;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #f7cac9;
+}
+
+.welcome-card {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 4px 24px rgba(184, 92, 56, 0.10);
+    max-width: 950px;
+    width: 100%;
+    margin: 0 1rem;
+    padding: 2.5rem 2rem 2.5rem 2.5rem;
+    align-items: stretch;
+    gap: 2.5rem;
+}
+
+.welcome-left {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-emoji {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    line-height: 1;
+}
+
+.welcome-text p {
+    font-size: 1.15rem;
+    color: #6a4e42;
+    margin: 0 0 1.1rem 0;
+    max-width: 600px;
+}
+
+.welcome-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin: 1.5rem 0 1.2rem 0;
+}
+
+.welcome-tag {
+    background: linear-gradient(90deg, #f7cac9 0%, #fff6e9 100%);
+    color: #b85c38;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 2rem;
+    padding: 0.5rem 1.2rem;
+    box-shadow: 0 2px 8px rgba(184, 92, 56, 0.07);
+    display: inline-block;
+    margin-bottom: 0.2rem;
+    white-space: nowrap;
+}
+
+.welcome-reviews-btn {
+    margin-top: 1.5rem;
+}
+
+.reviews-btn {
+    background: linear-gradient(90deg, #f7cac9 0%, #fff6e9 100%);
+    color: #b85c38;
+    font-size: 1.08rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.7rem 1.7rem;
+    box-shadow: 0 2px 8px rgba(184, 92, 56, 0.10);
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s;
+    outline: none;
+}
+.reviews-btn:hover, .reviews-btn:focus {
+    background: #f7cac9;
+    color: #6a4e42;
+}
+
+.welcome-right {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.welcome-image-placeholder {
+    width: 320px;
+    aspect-ratio: 4/3;
+    background: linear-gradient(120deg, #fff6e9 60%, #f7cac9 100%);
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 12px rgba(184, 92, 56, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    min-height: 180px;
+    max-width: 100%;
+    margin-left: auto;
+}
+
+@media (max-width: 900px) {
+    .welcome-card {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+    .welcome-right {
+        justify-content: center;
+        align-items: center;
+    }
+    .welcome-image-placeholder {
+        margin: 0 auto;
+    }
+}
+
+.experience-block {
+    background: #f7cac9;
+    padding: 2.5rem 1rem 2rem 1rem;
+    text-align: center;
+    border-bottom: 2px solid #b85c38;
+}
+
+.experience-block h2 {
+    font-size: 2rem;
+    color: #6a4e42;
+    margin-bottom: 1rem;
+}
+
+.experience-block .experience-info {
+    font-size: 1.1rem;
+    color: #6a4e42;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.media-reel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+    background: #fff6e9;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(184, 92, 56, 0.08);
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.media-placeholder {
+    color: #b85c38;
+    font-size: 1.2rem;
+    padding: 2rem;
+    opacity: 0.7;
+}
+
+.contact-block {
+    background: #fff6e9;
+    padding: 2.5rem 1rem 2rem 1rem;
+    text-align: center;
+}
+
+.contact-block h2 {
+    font-size: 2rem;
+    color: #b85c38;
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+.contact-info a {
+    color: #b85c38;
+    text-decoration: none;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 400px;
+    margin: 0 auto 1.5rem auto;
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(184, 92, 56, 0.08);
+    box-sizing: border-box;
+}
+
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1rem;
+    color: #6a4e42;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+    border: 1px solid #f7cac9;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    background: #fff6e9;
+    color: #222;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background: #b85c38;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button:hover {
+    background: #6a4e42;
+}
+
+.contact-form button:disabled {
+    background: #a09a97;
+    color: #fff;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.form-success {
+    color: #2e7d32;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.form-error {
+    color: #c62828;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.hero-block.hero-custom {
+    position: relative;
+    background: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-title {
+    color: #4b3f72; /* dark pastel purple */
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.hero-title span {
+    display: block;
+    font-size: 1.5rem;
+    color: #b85c38;
+    margin-top: 1rem;
+}
+
+.hero-shape {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.8;
+    animation: hero-shape-in 1.2s cubic-bezier(0.6, 0.2, 0.4, 1.1) forwards;
+}
+
+.hero-shape-left {
+    left: -120px;
+    animation-name: hero-shape-in-left;
+}
+.hero-shape-right {
+    right: -120px;
+    animation-name: hero-shape-in-right;
+}
+
+.hero-shape-circle {
+    border-radius: 50%;
+}
+
+.hero-shape-square {
+    /* border-radius set inline for variety */
+}
+
+/* Triangle shape uses a child div for the border trick */
+.triangle-shape {
+    width: 0;
+    height: 0;
+}
+
+@keyframes hero-shape-in-left {
+    from {
+        left: -120px;
+        opacity: 0;
+    }
+    to {
+        left: var(--landing, 40px);
+        opacity: 0.8;
+    }
+}
+
+@keyframes hero-shape-in-right {
+    from {
+        right: -120px;
+        opacity: 0;
+    }
+    to {
+        right: var(--landing, 40px);
+        opacity: 0.8;
+    }
+}
+
+.scroll-indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.mouse {
+    width: 32px;
+    height: 50px;
+    border: 3px solid #4b7c5c;
+    border-radius: 16px;
+    position: relative;
+    box-sizing: border-box;
+    background: transparent;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.mouse-dot {
+    width: 7px;
+    height: 7px;
+    background: #4b7c5c;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    animation: mouse-dot-move 1.4s infinite cubic-bezier(0.6, 0.2, 0.4, 1.1);
+}
+
+@keyframes mouse-dot-move {
+    0% {
+        opacity: 0;
+        top: 10px;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+        top: 28px;
+    }
+    100% {
+        opacity: 0;
+        top: 28px;
+    }
+}
+
+/* Add more global styles as needed */
