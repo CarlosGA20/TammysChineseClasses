@@ -1,4 +1,4 @@
-me: Deploy Zola site
+name: Deploy Zola site
 
 on:
   push:
