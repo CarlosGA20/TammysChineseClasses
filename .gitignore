@@ -1,0 +1,15 @@
+# Ignore Zola output
+public/
+.sass-cache/
+*.rs.bk
+
+# Backup files
+*~
+*.bak
+*.tmp
+
+# VSCode (optional)
+.vscode/
+
+# Logs (optional)
+*.log

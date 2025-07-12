@@ -1,0 +1,26 @@
+# The URL the site will be built for
+base_url = "https://example.com"
+title = "Tammy's Chinese Classes"
+description = "Learn Chinese in a fun and engaging way with Tammy"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+# Put all your custom variables here
+
+# The number of articles to include in the feed. All items are included if
+# this limit is not set (the default).
+# feed_limit = 20
+
+[markdown]
+# Whether to do syntax highlighting
+highlight_code = true
+
+[extra]
+# Put all your custom variables here
+author = "Tammy"
+email = "tammy@example.com"  # Replace with your actual email
+instagram = "@tammychinese"   # Replace with your actual Instagram
