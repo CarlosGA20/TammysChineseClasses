@@ -3,7 +3,7 @@ name: Deploy Zola site
 on:
   push:
     branches:
-      - master  # Use 'master' since that's your default branch
+      - master
 
 jobs:
   build-deploy:
@@ -13,15 +13,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install Zola
-        run: |
-          curl -sSL https://github.com/getzola/zola/releases/latest/download/zola.tar.gz -o zola.tar.gz
-          tar -xzf zola.tar.gz
-          sudo mv zola /usr/local/bin
-
-
-      - name: Build the site
-        run: zola build
+      - name: Build site with Zola
+        uses: shalzz/zola-deploy-action@v0.20.0
+        with:
+          build_dir: public
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
